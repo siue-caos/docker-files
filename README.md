@@ -1,2 +1,14 @@
 # docker-files
-Docker files
+Docker files for development.
+
+## Usage Examples
+
+### To Build
+docker build -t java-dev:0.1 .
+
+### To Run
+docker run -i -t java-dev:0.1 /bin/bash
+
+### To exit
+exit
+
