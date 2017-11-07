@@ -13,16 +13,23 @@ MAINTAINER josh@hauptj.com
 ################## BEGIN INSTALLATION ######################
 
 # Update the repository sources list once more
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update -y
 
-# Install GIT, Java, Imagemagic, Irssis, Nano, Wget
+# Resolve: "debconf: delaying package configuration, since apt-utils is not installed"
+# https://github.com/phusion/baseimage-docker/issues/319
+RUN apt-get install -y --no-install-recommends apt-utils
+ 
+# Install GIT, Java, Imagemagic, Irssis, Nano, Vim, Wget
 RUN apt-get install -y \
 	git \
 	openjdk-8-jdk \
 	imagemagick \
 	irssi \
 	nano \
-	wget
+	vim \
+	emacs \
+	wget \
+	curl
 	
 
 ##################### INSTALLATION END #####################
