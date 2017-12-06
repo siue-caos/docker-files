@@ -23,6 +23,7 @@ RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -y \
 	git \
 	openjdk-8-jdk \
+	maven \
 	imagemagick \
 	irssi \
 	nano \
