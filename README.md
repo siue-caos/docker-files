@@ -7,7 +7,7 @@ Docker files for development.
 docker build -t java-dev:0.2.1 .
 
 ### To Run
-docker run -i -t java-dev:0.2 /bin/bash
+docker run -i -t java-dev:0.2.1 /bin/bash
 
 ### To exit
 exit
